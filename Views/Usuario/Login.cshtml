@@ -1,0 +1,86 @@
+﻿@model ProyectoAYD1_HOSPITAL.Models.TbUsuario
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html Lang="en">
+
+
+<header class="header">
+    <div class="logo">
+        <img src="~/css/Logo/Logo_Hospital.jpg" alt="Logo del Hospital">
+    </div>
+    <div class="container-header">
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Especialidades</a></li>
+                <li><a href="#">Telesalud</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Estadísticas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<head>
+    <meta charset="UFT-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="~/css/Login.css">
+
+</head>
+
+<body>
+
+    <div class="box">
+        <span class="border"></span>
+        <form asp-controller="usuario" asp-action="Validar" method="post">
+            <h2>Inicie Sesión</h2>
+
+            <!----------------------------------SIGN IN------------------------------------------->
+
+            <div class="inputBox">
+                <span>Número de Identidad</span>
+                <input asp-for="PacienteId" type="text" id="" />
+                <i></i>
+            </div>
+
+            <!----------------------------------CONTRASEÑA------------------------------------------->
+            <div class="inputBox">
+                <span>Contraseña</span>
+                <input asp-for="Password" type="password" id="" />
+                <i></i>
+            </div>
+
+            <!------------------------------LINKS OLVIDO CONTRASEÑA/ REGISTRATE----------------------->
+            <!------------------------------BOTON ENTRAR------------------------------------------->
+            <input type="submit" style="--clr:#fbff00" value="Entrar" aria-hidden="true">
+
+        </form>
+    </div> <!-- /box -->
+</body>
+
+<footer class="footer">
+    <div class="container-footer">
+        <div class="footer-info">
+            <img src="ruta_del_logo.jpg" alt="Logo del Hospital" class="footer-logo">
+            <p>Oficina de Estadística e Informática:</p>
+            <p>Carretera Central Km. 3.5 - Santa Anita</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Intranet</a>
+            <a href="#">Mapa del Sitio</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="footer-contact">
+            <p><strong>Central Telefónica:</strong> (01) 748 1990</p>
+            <p><strong>Email:</strong> webmaster@hhv.gob.pe</p>
+        </div>
+    </div>
+</footer>
+</html>

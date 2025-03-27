@@ -1,0 +1,191 @@
+﻿/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #006400;
+    width: 100%;
+}
+
+.container-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #006400;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.logo img {
+    max-width: 180px;
+    height: auto;
+}
+
+/* Caja principal */
+.box {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+    .inputBox span {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .inputBox input {
+        width: 100%;
+        padding: 12px 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        background-color: #f8f8f8;
+        outline: none;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+
+        .inputBox input:focus {
+            border-bottom: 2px solid #006400;
+            background-color: #fff;
+        }
+
+/* Botón */
+input[type="submit"] {
+    background-color: #ff7e44;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+    input[type="submit"]:hover {
+        background-color: #007c4c;
+    }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #004d26;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-info, .footer-links, .footer-contact {
+    flex: 1;
+    padding: 10px;
+}
+
+    .footer-links a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
